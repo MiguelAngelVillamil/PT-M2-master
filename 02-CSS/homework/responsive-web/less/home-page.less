@@ -2,6 +2,74 @@
 
 .home {
 
+  /* Media config */
+  @media only screen and (max-width: @phone) {
+
+    img {
+      width: 100%;
+    }
+
+    .music-images img{ 
+      width: 100% !important;
+    }
+
+    .tecnologia {
+      display: none;
+    }
+
+    .ondas {
+      display: none;
+    }
+
+    .actual {
+      padding: 0px !important;
+    }
+
+    .actual-img {
+      position: absolute;
+      width: 100% !important;
+      margin: 0px !important;
+    }
+
+    .actual-img img {
+      border-radius: 25px !important;
+    }
+
+    .actual-text {
+      position: absolute;
+      width: 100% !important;
+      padding-top: 320px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    footer{
+      position: relative;
+      top: 700px;
+    }
+
+    .btn-registrate {
+      .btn(@btn-bg-color, @wild-sand);
+      font-size: 16px;
+      padding: 20px;
+      border-radius: 10px;
+      width: auto;
+    }
+    .btn-registrate:hover {
+      .btn(@wild-sand, @btn-bg-color);
+      font-size: 16px;
+      padding: 20px;
+      border-radius: 10px;
+      width: auto;
+    }
+  }
+  
+
+  img {
+    border-radius: 20px;
+    padding: 10px;
+  }
+
   .intro {
 
     h2 {
@@ -56,9 +124,6 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
 
     .actual-img {
@@ -73,3 +138,4 @@
     }
   }
 }
+
