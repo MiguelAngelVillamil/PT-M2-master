@@ -9,8 +9,8 @@
       width: 100%;
     }
 
-    .music-images img{ 
-      width: 100% !important;
+    .music-images .auricular{ 
+      width: 100%;
     }
 
     .tecnologia {
@@ -25,13 +25,17 @@
       padding: 0px !important;
     }
 
-    .actual-img {
+    .container .home .actual {
+      padding: 0px;
+    }
+
+    .actual .actual-img {
       position: absolute;
       width: 100% !important;
       margin: 0px !important;
     }
 
-    .actual-img img {
+    .actual .actual-img img {
       border-radius: 25px !important;
     }
 
@@ -50,14 +54,14 @@
 
     .btn-registrate {
       .btn(@btn-bg-color, @wild-sand);
-      font-size: 16px;
-      padding: 20px;
+
       border-radius: 10px;
+      padding: 20px;
       width: auto;
     }
     .btn-registrate:hover {
       .btn(@wild-sand, @btn-bg-color);
-      font-size: 16px;
+
       padding: 20px;
       border-radius: 10px;
       width: auto;

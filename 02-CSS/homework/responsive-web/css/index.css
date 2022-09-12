@@ -183,7 +183,6 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -220,8 +219,8 @@ footer {
   .home img {
     width: 100%;
   }
-  .home .music-images img {
-    width: 100% !important;
+  .home .music-images .auricular {
+    width: 100%;
   }
   .home .tecnologia {
     display: none;
@@ -232,12 +231,15 @@ footer {
   .home .actual {
     padding: 0px !important;
   }
-  .home .actual-img {
+  .home .container .home .actual {
+    padding: 0px;
+  }
+  .home .actual .actual-img {
     position: absolute;
     width: 100% !important;
     margin: 0px !important;
   }
-  .home .actual-img img {
+  .home .actual .actual-img img {
     border-radius: 25px !important;
   }
   .home .actual-text {
@@ -259,8 +261,8 @@ footer {
     border: 2px solid #F6F6F6;
     text-align: center;
     font-size: 16px;
-    padding: 20px;
     border-radius: 10px;
+    padding: 20px;
     width: auto;
   }
   .home .btn-registrate:hover {
