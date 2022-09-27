@@ -1,0 +1,72 @@
+.contenedor {
+    text-align: center;
+
+    width: 360px;
+    height: 180px;
+    
+    margin: 20px;
+    padding: 10px; 
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    
+    display: inline-block;
+}
+
+.interfaz{
+    position: relative;
+    width: 100%;
+    
+
+}
+
+.titulo {
+    text-align: left;
+
+    position: relative;
+    top: 6px;
+    left: 8px;
+}
+
+.botones {
+    text-align: center;
+    width: auto;
+    height: auto;
+    
+    color: white;
+    background-color: red;
+    border: 4px solid red;
+    border-radius: 4px;
+
+    position: absolute;
+    left: 19em;
+    top: 7px;
+
+    display: inline-block;
+}
+
+.elemento {
+    text-align: left;
+
+    width: 110px;
+    height: 110px;
+
+    display: inline-block;
+    
+
+    padding: 10px;
+}
+
+.imagen {
+
+    position: relative;
+    top: -20px;
+    width: 110px;
+    height: 110px;
+
+    display: inline-block;
+    
+
+    padding: 10px;
+}

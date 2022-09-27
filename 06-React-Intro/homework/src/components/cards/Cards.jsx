@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card.jsx';
+import Card from '../card/Card.jsx';
 
 // Cities es un array de objetos que recuperamos en el App.js
 // Este array está exportando en data.js
