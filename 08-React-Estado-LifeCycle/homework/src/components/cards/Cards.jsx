@@ -3,7 +3,7 @@ import Card from '../card/Card.jsx';
 
 // Cities es un array de objetos que recuperamos en el App.js
 // Este array está exportando en data.js
-export default function Cards({cities}) {
+export default function Cards({cities, onClose}) {
   
   return (
     <div>
@@ -14,8 +14,8 @@ export default function Cards({cities}) {
             min={city.main.temp_min}
             name={city.name}
             img={city.weather[0].icon}
-            onClose={() => alert(city.name)}
-            key={i}
+            onClose={() => city.onClose(city.id)}
+            key={city.id}
             />
         })
       }
