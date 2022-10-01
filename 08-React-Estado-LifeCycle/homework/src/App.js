@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/nav/Nav.jsx';
 import Cards from './components/cards/Cards.jsx';
-import data from './data.js';
 
 export default function App() {
   
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid='4ae2636d8dfbdc3044bede63951a019b&units=metric`)
-      .then(r => r.json())
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=4ae2636d8dfbdc3044bede63951a019b&units=metric`)
+      .then(response => response.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
           const ciudad = {
@@ -35,15 +34,14 @@ export default function App() {
     }
 
   function onClose(id) {
-      setCities(oldCities => oldCities.filter(c => c.id != id));
+      setCities(oldCities => oldCities.filter(c => c.id !== id));
     }
 
   return (
     <div className="App">
-      <h1>Título</h1>
       <Nav onSearch={onSearch}/>
       <div>
-        <Cards cities={data} onClose={onClose}/>
+        <Cards cities={cities} onClose={onClose}/>
       </div>
     </div>
     
