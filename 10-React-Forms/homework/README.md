@@ -179,7 +179,7 @@ Recordemos que el `onChange` pasa un evento a la función que le pasemos. Y dent
 
 Entonces, si le pasamos esta función a cualquier input, podemos usar su atributo `name` para indicar el nombre de la propiedad en el estado.
 
-Recuerden que `setInput` *pista* el estado anterior. Por lo tanto tenemos que pasarle también las propiedades viejas que tenia el estado, podemos usar el spreading de ES6:
+Recuerden que `setInput` *pisa* el estado anterior. Por lo tanto tenemos que pasarle también las propiedades viejas que tenia el estado, podemos usar el spreading de ES6:
 
 ```js
 {
