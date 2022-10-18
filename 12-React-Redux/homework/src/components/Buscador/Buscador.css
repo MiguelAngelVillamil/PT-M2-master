@@ -1,15 +1,5 @@
-.cnt {
-    padding-top: 10px;
-}
-.form-container {
-    display:flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.form-container button {
-    margin-left: 20px;
-}
-.label {
-    padding-right: 10px;
+.spaced {
+    padding: 10px;
+    margin: 10px 0px 10px 10px !important;
+    width: auto;
 }
